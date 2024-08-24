@@ -26,7 +26,7 @@ def load_images(data_path, target_size=(192, 192)):
     return np.array(images), np.array(labels)
 
 # Define paths to your dataset
-train_data_dir = r'D:\CD\raw'  # Training data directory
+train_data_dir = r'Path\raw'  # Training data directory
 
 # Load and preprocess images
 X, y = load_images(train_data_dir)
@@ -69,7 +69,7 @@ model.summary()
 
 # Define callbacks for early stopping and model checkpoint
 early_stop = EarlyStopping(monitor='val_loss', patience=3, verbose=1, restore_best_weights=True)
-checkpoint = ModelCheckpoint('D:\CD\model_final.keras\model.keras', monitor='val_loss', save_best_only=True, verbose=1)
+checkpoint = ModelCheckpoint('Path\model.keras', monitor='val_loss', save_best_only=True, verbose=1)
 
 # Train the model
 history = model.fit(X_train, y_train, batch_size=32, epochs=20, validation_data=(X_valid, y_valid), callbacks=[early_stop, checkpoint])
