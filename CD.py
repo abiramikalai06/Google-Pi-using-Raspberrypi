@@ -22,7 +22,7 @@ print("Camera opened successfully.")
 
 # Load your trained model
 try:
-    model = load_model('D:\Final Project\CD\model.keras')
+    model = load_model('Path\model.keras')
 except Exception as e:
     print("Error loading the model:", str(e))
     exit()
