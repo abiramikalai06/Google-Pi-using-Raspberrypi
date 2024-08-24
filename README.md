@@ -1,1 +1,1 @@
-# Google-Pi-using-Raspberrypi
+# Object-and-Currency-Recognition-using-Raspberrypi
