@@ -23,9 +23,9 @@ else:
     print("Camera opened successfully.")
 
 # Load pre-trained object detection model (e.g., YOLOv3)
-net = cv2.dnn.readNet("D:\Final Project\OD\yolov3.weights", "D:\Final Project\OD\yolov3.cfg")  # Provide the paths to your YOLO model files
+net = cv2.dnn.readNet("Path\yolov3.weights", "Path\yolov3.cfg")  # Provide the paths to your YOLO model files
 classes = []
-with open("D:\Final Project\OD\coco.names", "r") as f:
+with open("Path\coco.names", "r") as f:
     classes = f.read().splitlines()
 
 # Set up text-to-speech engine
